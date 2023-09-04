@@ -133,7 +133,7 @@ Material:
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _OpaqueCullMode: 2
-    - _QueueControl: -1
+    - _QueueControl: 1
     - _QueueOffset: 0
     - _RayTracing: 0
     - _ReceiveShadows: 1
