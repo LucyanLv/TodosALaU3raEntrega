@@ -37,7 +37,7 @@ public class Recolected : MonoBehaviour
     private void Start()
     {
         StartCoroutine(FirstCanvas());
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void OnTriggerEnter(Collider other)
