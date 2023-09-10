@@ -8,7 +8,7 @@ Queremos expresar nuestro más sincero agradecimiento a la Universidad Nacional 
 
 ## Ejecutable
 
-El ejecutable de nuestro entregabke se encuentra disponible en la sección de ["RELEASES"](https://github.com/LucyanLv/TodosALaU3raEntrega/releases/tag/Release3raEntrega) de este repositorio. Puedes descargar la última versión estable desde allí.
+El ejecutable de nuestro entregable se encuentra disponible en la sección de ["RELEASES"](https://github.com/LucyanLv/TodosALaU3raEntrega/releases/tag/Release3raEntrega) de este repositorio. Puedes descargar la última versión estable desde allí.
 
 ## Cómo utilizar
 
