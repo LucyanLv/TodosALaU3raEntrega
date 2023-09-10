@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Timeline;
 
 public class Recolected : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI InicioCanvas;
-    
+    [SerializeField] AudioSource soundCollected;
+
     [Header("Barriles")]
     [SerializeField] GameObject[] barriles;
     private int barrilesDestruidos = 0;
@@ -34,6 +36,8 @@ public class Recolected : MonoBehaviour
     [SerializeField] GameObject colliderExtintores2;
     [SerializeField] TextMeshProUGUI IncendioCanvas;
     [SerializeField] GameObject IncendioParticulas;
+
+   
     private void Start()
     {
         StartCoroutine(FirstCanvas());
@@ -44,6 +48,7 @@ public class Recolected : MonoBehaviour
     {
         if (other.CompareTag("BarrilColectable"))
         {
+            soundCollected.Play();
             Destroy(other.gameObject); // Destruir el barril que el jugador tocó
             barrilesDestruidos++;
 
@@ -61,6 +66,7 @@ public class Recolected : MonoBehaviour
 
         if (other.CompareTag("Extintores1Colectable"))
         {
+            soundCollected.Play();
             Destroy(other.gameObject); // Destruir el barril que el jugador tocó
             extintoresDestruidos++;
 
@@ -79,6 +85,7 @@ public class Recolected : MonoBehaviour
 
         if (other.CompareTag("RegaderasColectable"))
         {
+            soundCollected.Play();
             Destroy(other.gameObject); // Destruir el barril que el jugador tocó
             regaderasDestruidos++;
 
@@ -97,6 +104,7 @@ public class Recolected : MonoBehaviour
 
         if (other.CompareTag("ExtintoresIncendio2"))
         {
+            soundCollected.Play();
             Destroy(other.gameObject); // Destruir el barril que el jugador tocó
             extintores2Destruidos++;
 
